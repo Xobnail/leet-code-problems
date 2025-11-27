@@ -1,6 +1,4 @@
-﻿using LeetCodeProblems.Problems.P94;
-
-namespace LeetCodeProblems.Trees;
+﻿namespace LeetCodeProblems.Trees;
 
 public class TreeFunctions
 {

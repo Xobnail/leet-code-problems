@@ -1,4 +1,6 @@
-﻿namespace LeetCodeProblems.Problems.P145;
+﻿using LeetCodeProblems.Trees;
+
+namespace LeetCodeProblems.Problems.P145;
 
 /// <summary>
 /// 145. Binary Tree Postorder Traversal
@@ -37,16 +39,16 @@ internal class P145
     }
 }
 
-public class TreeNode
-{
-    public int val;
-    public TreeNode left;
-    public TreeNode right;
+//public class TreeNode
+//{
+//    public int val;
+//    public TreeNode left;
+//    public TreeNode right;
 
-    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-    {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
+//    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+//    {
+//        this.val = val;
+//        this.left = left;
+//        this.right = right;
+//    }
+//}
