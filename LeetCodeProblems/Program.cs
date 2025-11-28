@@ -1,5 +1,4 @@
-﻿using LeetCodeProblems.Problems.P100;
-using LeetCodeProblems.Trees;
+﻿using LeetCodeProblems.Problems.P349;
 
 namespace LeetCodeProblems;
 
@@ -16,17 +15,12 @@ public class Runner
 {
     public void Run()
     {
-        var problem = new P100();
+        var problem = new P349();
+        int[] nums1 = [1, 2, 2, 1], nums2 = [2,2];
 
-        int?[] p = [10, 5, 15];
-        int?[] q = [10, 5, null, null, 15];
+        var result = problem.Intersection(nums1, nums2);
 
-        var pTree = p.BuildTree();
-        var qTree = q.BuildTree();
-
-        pTree.Print();
-        qTree.Print();
-        Console.WriteLine(problem.IsSameTree(pTree, qTree));
+        Console.WriteLine(string.Join(",", result));
     }
 }
 
