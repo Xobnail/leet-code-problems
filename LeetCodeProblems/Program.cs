@@ -1,4 +1,4 @@
-﻿using LeetCodeProblems.Problems.P226;
+﻿using LeetCodeProblems.Problems.P100;
 using LeetCodeProblems.Trees;
 
 namespace LeetCodeProblems;
@@ -16,13 +16,17 @@ public class Runner
 {
     public void Run()
     {
-        int?[] root = [4, 2, 7, 1, 3, 6, 9];
+        var problem = new P100();
 
-        TreeFunctions.BuildTree(root).Print();
+        int?[] p = [10, 5, 15];
+        int?[] q = [10, 5, null, null, 15];
 
-        var p = new P226();
+        var pTree = p.BuildTree();
+        var qTree = q.BuildTree();
 
-        p.InvertTree(TreeFunctions.BuildTree(root)).Print();
+        pTree.Print();
+        qTree.Print();
+        Console.WriteLine(problem.IsSameTree(pTree, qTree));
     }
 }
 
