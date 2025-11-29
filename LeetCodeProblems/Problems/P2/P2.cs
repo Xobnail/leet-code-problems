@@ -1,4 +1,6 @@
-﻿namespace LeetCodeProblems.Problems.P2;
+﻿using LeetCodeProblems.Models;
+
+namespace LeetCodeProblems.Problems.P2;
 
 /// <summary>
 /// 2. Add Two Numbers
@@ -38,16 +40,5 @@ internal class P2
         }
 
         return result;
-    }
-}
-
-public class ListNode
-{
-    public int val;
-    public ListNode next;
-    public ListNode(int val = 0, ListNode next = null)
-    {
-        this.val = val;
-        this.next = next;
     }
 }

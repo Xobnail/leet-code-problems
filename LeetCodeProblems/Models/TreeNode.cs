@@ -1,4 +1,4 @@
-﻿namespace LeetCodeProblems.Trees;
+﻿namespace LeetCodeProblems.Models;
 public class TreeNode
 {
     public int val;

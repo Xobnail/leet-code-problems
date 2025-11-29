@@ -1,4 +1,6 @@
-﻿namespace LeetCodeProblems.Trees;
+﻿using LeetCodeProblems.Models;
+
+namespace LeetCodeProblems.Trees;
 
 public static class TreeFunctions
 {

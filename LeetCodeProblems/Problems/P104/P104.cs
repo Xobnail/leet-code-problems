@@ -1,4 +1,4 @@
-﻿using LeetCodeProblems.Trees;
+﻿using LeetCodeProblems.Models;
 
 namespace LeetCodeProblems.Problems.P104;
 

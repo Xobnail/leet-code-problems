@@ -1,4 +1,6 @@
-﻿using LeetCodeProblems.Problems.P349;
+﻿using LeetCodeProblems.Models;
+using LeetCodeProblems.Problems.P21;
+using LeetCodeProblems.Problems.P349;
 
 namespace LeetCodeProblems;
 
@@ -15,12 +17,12 @@ public class Runner
 {
     public void Run()
     {
-        var problem = new P349();
-        int[] nums1 = [1, 2, 2, 1], nums2 = [2,2];
+        var a = new ListNode(-2, new ListNode(5));
+        var b = new ListNode(-9, new ListNode(-6, new ListNode(-3, new ListNode(-1, new ListNode(1, new ListNode(6))))));
 
-        var result = problem.Intersection(nums1, nums2);
-
-        Console.WriteLine(string.Join(",", result));
+        var problem = new P21();
+        var result = problem.MergeTwoLists(a, b);
+        _ = result;
     }
 }
 

@@ -5,7 +5,10 @@
 /// </summary>
 internal class P509
 {
-    public int Fib(int n)
+    /// <summary>
+    /// С помощью цикла.
+    /// </summary>
+    public int Fib1(int n)
     {
         if (n < 2)
         {
@@ -24,5 +27,18 @@ internal class P509
         }
 
         return result;
+    }
+
+    /// <summary>
+    /// С помощью рекурсии.
+    /// </summary>
+    public int Fib(int n)
+    {
+        if (n < 2)
+        {
+            return n;
+        }
+
+        return Fib(n - 1) + Fib(n - 2);
     }
 }
