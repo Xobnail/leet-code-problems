@@ -2,6 +2,8 @@
 using LeetCodeProblems.Problems.P21;
 using LeetCodeProblems.Problems.P349;
 using LeetCodeProblems.Problems.P83;
+using LeetCodeProblems.Problems.P897;
+using LeetCodeProblems.Trees;
 
 namespace LeetCodeProblems;
 
@@ -18,11 +20,14 @@ public class Runner
 {
     public void Run()
     {
-        var a = new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3)))));
+        int?[] a = [5, 3, 6, 2, 4, null, 8, 1, null, null, null, 7, 9];
 
-        var problem = new P83();
-        var result = problem.DeleteDuplicates(a);
-        _ = result;
+        var ba = a.BuildTree();
+        ba.Print();
+
+        var problem = new P897();
+        var result = problem.IncreasingBST(ba);
+        result.Print();
     }
 }
 
