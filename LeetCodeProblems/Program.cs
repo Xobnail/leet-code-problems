@@ -1,4 +1,5 @@
-﻿using LeetCodeProblems.Problems.P1624;
+﻿using LeetCodeProblems.Problems.P872;
+using LeetCodeProblems.Trees;
 
 namespace LeetCodeProblems;
 
@@ -15,10 +16,17 @@ public class Runner
 {
     public void Run()
     {
-        string s = "abqwert";
+        int?[] a = [1, 2, 3];
+        int?[] b = [1, 3, 2];
 
-        var problem = new P1624();
-        var result = problem.MaxLengthBetweenEqualCharacters(s);
+        var at = a.BuildTree();
+        var bt = b.BuildTree();
+
+        at.Print();
+        bt.Print();
+
+        var problem = new P872();
+        var result = problem.LeafSimilar(at, bt);
         Console.WriteLine(result);
     }
 }
