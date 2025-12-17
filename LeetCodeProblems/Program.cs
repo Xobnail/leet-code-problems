@@ -1,4 +1,4 @@
-﻿using LeetCodeProblems.Problems.P1370;
+﻿using LeetCodeProblems.Problems._108._Convert_Sorted_Array_to_Binary_Search_Tree;
 
 namespace LeetCodeProblems;
 
@@ -15,10 +15,11 @@ public class Runner
 {
     public void Run()
     {
-        var p = new P1370();
+        var p = new P108();
 
-        var res = p.SortString("rat");
-        Console.WriteLine(res);
+        int[] a = [-10, -3, 0, 5, 9];
+
+        p.SortedArrayToBST(a);
     }
 }
 
