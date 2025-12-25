@@ -12,18 +12,18 @@ internal class P852
 
         while (l < r)
         {
-            int m = (l + r) / 2;
+            int m = l + (r - l + 1) / 2;
 
             if (arr[m - 1] < arr[m])
             {
-                l = m + 1;
+                l = m;
             }
             else
             {
-                r = m;
+                r = m - 1;
             }
         }
 
-        return l - 1;
+        return l;
     }
 }
